@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SHRINGAR Salon & Spa - Experience premium hair design, advanced coloring, skin therapy, and nail art in a luxury gold-slate environment. Book your online appointment today.">
+    <title>SHRINGAR Salon & Spa | Premium Hair, Skin & Nail Care</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo-area">
+                <img src="assets/images/logo.png" alt="SHRINGAR Logo" class="logo-img" id="logo-img">
+                <span class="logo-text">SHRINGAR</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#team" class="nav-link">Stylists</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#booking" class="btn btn-primary btn-sm scroll-to-booking">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="hero-subtitle fade-in-up">Where Luxury Meets Perfection</span>
+                <h1 class="hero-title fade-in-up">Indulge in the Ultimate Styling Experience</h1>
+                <p class="hero-desc fade-in-up">Unwind in our gold-standard luxury salon. From precision cuts and advanced organic coloring to rejuvenating skin treatments, discover styling crafted uniquely for you.</p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#services" class="btn btn-outline">Explore Menu</a>
+                    <a href="#booking" class="btn btn-primary scroll-to-booking">Book Appointment</a>
+                </div>
+            </div>
+            <div class="hero-badge fade-in-up">
+                <span class="badge-num">100%</span>
+                <span class="badge-lbl">Premium Organic Care</span>
+            </div>
+        </section>
+
+        <!-- About / Showcase Section -->
+        <section id="about" class="about-section container section-padding">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-scroll">
+                    <div class="about-bg-frame"></div>
+                    <img src="assets/images/hero-bg.png" alt="SHRINGAR Luxury Salon Interior" class="about-img">
+                </div>
+                <div class="about-text-content reveal-scroll">
+                    <span class="section-tag">About SHRINGAR </span>
+                    <h2 class="section-title">Elevating Beauty with Expert Care</h2>
+                    <p class="about-desc">At SHRINGAR Salon, we believe beauty is more than appearance—it’s about confidence and self-care. Our experienced professionals provide personalized beauty, hair, and wellness services in a comfortable and welcoming environment, helping every client look and feel their absolute best.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-crown"></i></div>
+                            <div>
+                                <h3>Expert Care, Beautiful Results</h3>
+                                <p>Every client is unique, and we tailor our services to match your style, preferences, and beauty goals.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div>
+                                <h3>Organic Ingredients</h3>
+                                <p>We only use premium, sulfate-free, and vegan hair and skin care formulas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Menu Card) -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="center-title reveal-scroll">
+                    <span class="section-tag">Services Menu</span>
+                    <h2 class="section-title">Select Your SHRINGAR Treatment</h2>
+                    <p class="section-subtitle">Browse our premium curated services. Select and add treatments to your booking basket below.</p>
+                </div>
+
+                <!-- Menu Categories Filter -->
+                <div class="menu-filters reveal-scroll">
+                    <button class="filter-btn active" data-category="all">All Services</button>
+                    <button class="filter-btn" data-category="haircut">Precision Cuts</button>
+                    <button class="filter-btn" data-category="coloring">Color & Style</button>
+                    <button class="filter-btn" data-category="skin">Skin Therapy</button>
+                    <button class="filter-btn" data-category="nails">Nail Art</button>
+                </div>
+
+                <!-- Menu Cards Grid -->
+                <div class="menu-grid reveal-scroll" id="menu-grid">
+                    <!-- Service Card 1 -->
+                    <div class="menu-card" data-category="haircut" id="srv-1">
+                        <div class="card-image-container">
+                            <img src="assets/images/hair-cut.png" alt="Signature Haircut" class="card-img">
+                            <span class="card-tag">Best Seller</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="service-name">Signature Precision Cut</h3>
+                                <span class="service-price">$85</span>
+                            </div>
+                            <p class="service-desc">Includes custom scalp analysis, sensory botanical wash, precision structural cut, and signature blow-dry styling.</p>
+                            <div class="card-footer-row">
+                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 Mins</span>
+                                <button class="btn-add-service" data-id="1" data-name="Signature Precision Cut" data-price="85" data-duration="60">
+                                    <span class="btn-text">Add to Booking</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="menu-card" data-category="coloring" id="srv-2">
+                        <div class="card-image-container">
+                            <img src="assets/images/hair-colour.png" alt="Balayage Highlights" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="service-name">Luxe French Balayage</h3>
+                                <span class="service-price">$210</span>
+                            </div>
+                            <p class="service-desc">Hand-painted French balayage highlights for natural, sun-kissed dimension. Tone adjustment and protective gloss glaze included.</p>
+                            <div class="card-footer-row">
+                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 150 Mins</span>
+                                <button class="btn-add-service" data-id="2" data-name="Luxe French Balayage" data-price="210" data-duration="150">
+                                    <span class="btn-text">Add to Booking</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="menu-card" data-category="skin" id="srv-3">
+                        <div class="card-image-container">
+                            <img src="assets/images/skin-care.png" alt="Gold Radiance Facial" class="card-img">
+                            <span class="card-tag">Luxury</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="service-name">24k Gold Radiance Facial</h3>
+                                <span class="service-price">$150</span>
+                            </div>
+                            <p class="service-desc">Advanced skin rejuvenation therapy using 24k gold leaf particles, deep hydration serums, microcurrent firming, and facial massage.</p>
+                            <div class="card-footer-row">
+                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 75 Mins</span>
+                                <button class="btn-add-service" data-id="3" data-name="24k Gold Radiance Facial" data-price="150" data-duration="75">
+                                    <span class="btn-text">Add to Booking</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="menu-card" data-category="nails" id="srv-4">
+                        <div class="card-image-container">
+                            <img src="assets/images/nail-art.png" alt="Chrome Gel Manicure" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="service-name">SHRINGAR Chrome Gel Set</h3>
+                                <span class="service-price">$65</span>
+                            </div>
+                            <p class="service-desc">Complete luxury cuticle styling, strengthening base-gel overlays, custom mirror-chrome powder finish, and nourishing hand therapy.</p>
+                            <div class="card-footer-row">
+                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 Mins</span>
+                                <button class="btn-add-service" data-id="4" data-name="SHRINGAR Chrome Gel Set" data-price="65" data-duration="60">
+                                    <span class="btn-text">Add to Booking</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="menu-card" data-category="haircut" id="srv-5">
+                        <div class="card-image-container">
+                            <img src="assets/images/hair-cut.png" alt="Men's Executive Grooming" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="service-name">Men's Executive Grooming</h3>
+                                <span class="service-price">$60</span>
+                            </div>
+                            <p class="service-desc">Tailored hot towel straight-razor shave, signature taper cut, botanical hair wash, and soothing shoulder massage.</p>
+                            <div class="card-footer-row">
+                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 45 Mins</span>
+                                <button class="btn-add-service" data-id="5" data-name="Men's Executive Grooming" data-price="60" data-duration="45">
+                                    <span class="btn-text">Add to Booking</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="menu-card" data-category="coloring" id="srv-6">
+                        <div class="card-image-container">
+                            <img src="assets/images/hair-colour.png" alt="Caviar Repair Treatment" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="service-name">Organic Caviar Repair Therapy</h3>
+                                <span class="service-price">$120</span>
+                            </div>
+                            <p class="service-desc">Deep protein restructurization therapy for heat-damaged or dry hair. Seals hair cuticles, returning full shine, texture, and strength.</p>
+                            <div class="card-footer-row">
+                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 90 Mins</span>
+                                <button class="btn-add-service" data-id="6" data-name="Organic Caviar Repair Therapy" data-price="120" data-duration="90">
+                                    <span class="btn-text">Add to Booking</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking-section section-padding">
+            <div class="container">
+                <div class="center-title reveal-scroll">
+                    <span class="section-tag">Online Reservation</span>
+                    <h2 class="section-title">Schedule Your Session</h2>
+                    <p class="section-subtitle">Build your custom service combination, select your favorite specialist, and secure your time slot.</p>
+                </div>
+
+                <div class="booking-grid">
+                    <!-- Booking Basket Summary -->
+                    <div class="booking-summary-panel reveal-scroll">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-cart-shopping"></i> Selected Treatments</h3>
+                            <span class="selected-count-badge" id="selected-count">0</span>
+                        </div>
+                        
+                        <div class="selected-services-list" id="selected-list">
+                            <!-- Empty Basket State -->
+                            <div class="empty-basket" id="empty-basket-message">
+                                <div class="basket-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                <p>Your booking list is empty.</p>
+                                <p class="sub">Select services from the menu card above to add them to your session.</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-total-summary">
+                            <div class="summary-line">
+                                <span>Estimated Duration:</span>
+                                <span class="val" id="total-duration">0 mins</span>
+                            </div>
+                            <div class="summary-line highlight">
+                                <span>Grand Total:</span>
+                                <span class="val" id="total-price">$0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Booking Form -->
+                    <div class="booking-form-panel reveal-scroll">
+                        <form id="appointment-form" novalidate>
+                            <div class="form-grid">
+                                <div class="form-group full-width">
+                                    <label for="client-name">Your Full Name <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-user input-icon"></i>
+                                        <input type="text" id="client-name" name="name" placeholder="John Doe" required>
+                                    </div>
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="client-email">Email Address <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-envelope input-icon"></i>
+                                        <input type="email" id="client-email" name="email" placeholder="john@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="email-error">Please enter a valid email</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="client-phone">Phone Number <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-phone input-icon"></i>
+                                        <input type="tel" id="client-phone" name="phone" placeholder="(123) 456-7890" required>
+                                    </div>
+                                    <span class="error-msg" id="phone-error">Please enter your phone number</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="stylist-select">Preferred Specialist</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user-tie input-icon"></i>
+                                        <select id="stylist-select" name="stylist">
+                                            <option value="any">Any Specialist (No Preference)</option>
+                                            <option value="Veer">Satveer - Master Stylist</option>
+                                            <option value="Rohan">Rohan Sharma - Color Specialist</option>
+                                            <option value="hardik">Hardik bishnoi - Makeup Artist</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-date">Appointment Date <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-calendar input-icon"></i>
+                                        <input type="date" id="booking-date" name="date" required>
+                                    </div>
+                                    <span class="error-msg" id="date-error">Please pick a future date</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-time">Available Time Slot <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-clock input-icon"></i>
+                                        <select id="booking-time" name="time" required disabled>
+                                            <option value="">Select a date first...</option>
+                                        </select>
+                                    </div>
+                                    <span class="error-msg" id="time-error">Please select a time slot</span>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="special-notes">Special Requests or Consultations</label>
+                                    <div class="input-wrapper">
+                                        <textarea id="special-notes" name="notes" rows="3" placeholder="Tell us if you have hair allergies, need a quiet chair, or require specific products..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full-width" id="btn-submit-booking">
+                                <span class="btn-text">Confirm Booking Session</span>
+                                <i class="fa-solid fa-paper-plane btn-icon-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Master Stylists Section -->
+        <section id="team" class="team-section section-padding">
+            <div class="container">
+                <div class="center-title reveal-scroll">
+                    <span class="section-tag">Creative Team</span>
+                    <h2 class="section-title">Meet Our SHRINGAR Artisans</h2>
+                    <p class="section-subtitle">Our artists combine technical genius with personalized consultation to elevate your personal style.</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Stylist 1 -->
+                    <div class="team-card reveal-scroll">
+                        <div class="team-img-container">
+                            <div class="team-img-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                            <img src="assets/images/hair-cut.png" alt="Sophia Vance" class="team-img">
+                        </div>
+                        <div class="team-details">
+                            <h3>Satveer</h3>
+                            <span class="team-role">Master Hair Architect</span>
+                            <p class="team-bio">With over # years of styling specializes in geometric cuts, restructuring fine hair, and couture wedding updos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Stylist 2 -->
+                    <div class="team-card reveal-scroll" style="animation-delay: 0.1s;">
+                        <div class="team-img-container">
+                            <div class="team-img-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                            <img src="assets/images/hair-colour.png" alt="Julian Pierce" class="team-img">
+                        </div>
+                        <div class="team-details">
+                            <h3>Rohan Sharma</h3>
+                            <span class="team-role">Senior Color Alchemist</span>
+                            <p class="team-bio">Recognized as a leading color specialist, Rohan's expertise covers seamless balayage, pastel melting, and damage-free highlights.</p>
+                        </div>
+                    </div>
+
+                    <!-- Stylist 3 -->
+                    <div class="team-card reveal-scroll" style="animation-delay: 0.2s;">
+                        <div class="team-img-container">
+                            <div class="team-img-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                            <img src="assets/images/skin-care.png" alt="Elena Rostova" class="team-img">
+                        </div>
+                        <div class="team-details">
+                            <h3>Hardik Bishnoi</h3>
+                            <span class="team-role">Makeup Artist</span>
+                            <p class="team-bio">Hardik focuses on Creating stunning, personalized looks that bring out your natural beauty and confidence..</p>
+                        </div>
+                    </div>
+
+                    <!--
+<div class="team-card reveal-scroll" style="animation-delay: 0.3s;">
+    <div class="team-img-container">
+        <div class="team-img-overlay">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <img src="assets/images/nail-art.png" alt="Marcus Vance" class="team-img">
+    </div>
+    <div class="team-details">
+        <h3>Marcus Vance</h3>
+        <span class="team-role">Nail Art Specialist</span>
+        <p class="team-bio">A creative designer in modern nail structures, Marcus focuses on Japanese structured gels, mirror chromes, and custom hand care.</p>
+    </div>
+</div>
+-->
+</div> <!-- team-grid -->
+</div> <!-- container -->
+</section>
+        
+
+        <!-- Testimonials Section -->
+        <section id="reviews" class="reviews-section section-padding">
+            <div class="reviews-overlay"></div>
+            <div class="container testimonial-container reveal-scroll">
+                <div class="center-title">
+                    <span class="section-tag style-light">Client Stories</span>
+                    <h2 class="section-title text-light">SHRINGAR Testimonials</h2>
+                </div>
+
+                <div class="slider-wrapper">
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"SHRINGAR is in a class of its own. The Parisian precision cut Satveer did completely restructured my face. The absolute luxury of the space and the organic scent is pure therapy!"</p>
+                            <span class="testimonial-author">kshitiz</span>
+                            <span class="testimonial-client-tag">Verified Client</span>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Rohan is a true wizard with color. He transitioned me from pitch black to a premium, rich honey balayage without any damage. My hair feels even healthier than before!"</p>
+                            <span class="testimonial-author">Roamy Thakur</span>
+                            <span class="testimonial-client-tag">Verified Client</span>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"I had the Gold Radiance Facial, and my skin glowed for two weeks straight! hardik is incredibly detailed, customizing everything to my sensitive skin type. Outstanding."</p>
+                            <span class="testimonial-author">Sonali Sharma</span>
+                            <span class="testimonial-client-tag">Verified Client</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" id="slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                        <button class="slider-arrow next" id="slider-next"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-panel reveal-scroll">
+                        <span class="section-tag">Get in Touch</span>
+                        <h2 class="section-title">We Welcome You</h2>
+                        <p class="contact-sub">Have inquiries or want to book a private group styling session? Let us know, or call us directly.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Our Sanctuary</h4>
+                                    <p>Surat Garia Bazar, Shamshabad, B Block, Ellenabad, Sirsa, Haryana</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Contact Direct</h4>
+                                    <p>+91 81998-10184</p>
+                                    <p>bookings@SHRINGAR salons.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="icon-box"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <h4>Sanctuary Hours</h4>
+                                    <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                                    <p>Saturday - Sunday: 10:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel reveal-scroll">
+                        <h3>Send an Inquiry</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="XYZ Sharma">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="XYZ@sharma.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Inquiry Message</label>
+                                <textarea id="contact-message" name="message" rows="4" required placeholder="How can we assist you today?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline btn-full-width">Send Message</button>
+                        </form>
+                        <div id="contact-success-msg" class="success-alert-message">
+                            <i class="fa-solid fa-circle-check"></i> Thank you! Your inquiry was sent successfully. We will get back to you within 2 hours.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-bottom-row">
+            <div class="footer-brand">
+                <span class="logo-text">SHRINGAR </span>
+                <p>Redefining organic styling, cosmetic artistry.</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="#" aria-label="SHRINGAR Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/shringar_salon_academy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="SHRINGAR Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="SHRINGAR Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <p>&copy; 2026 SHRINGAR Salon. All rights reserved. Designed with gold standard.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="booking-modal-overlay" id="booking-modal">
+        <div class="booking-modal-content">
+            <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+            <div class="ticket-header">
+                <div class="ticket-logo">SHRINGAR </div>
+                <div class="ticket-stamp"><i class="fa-solid fa-certificate"></i> CONFIRMED</div>
+            </div>
+            <div class="ticket-body">
+                <h3>Appointment Confirmed!</h3>
+                <p class="subtitle">Thank you for reserving a premium session with SHRINGAR Salon & Spa. Your personalized stylist ticket is below:</p>
+                
+                <div class="ticket-details">
+                    <div class="ticket-row">
+                        <span class="label">Reservation ID</span>
+                        <span class="value" id="t-id">AUR-894738</span>
+                    </div>
+                    <div class="ticket-row">
+                        <span class="label">Guest</span>
+                        <span class="value" id="t-guest">John Doe</span>
+                    </div>
+                    <div class="ticket-row">
+                        <span class="label">Stylist / Therapist</span>
+                        <span class="value" id="t-stylist">Sophia Vance (Master Stylist)</span>
+                    </div>
+                    <div class="ticket-row">
+                        <span class="label">Date & Time</span>
+                        <span class="value" id="t-datetime">June 24, 2026 at 10:00 AM</span>
+                    </div>
+                    
+                    <div class="ticket-services-breakdown">
+                        <h4>Booked Treatments</h4>
+                        <ul id="t-services-list">
+                            <li>Signature Precision Cut - $85</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ticket-row total-highlight">
+                        <span class="label">Total Amount</span>
+                        <span class="value" id="t-total">$85</span>
+                    </div>
+                </div>
+
+                <div class="ticket-footer">
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Free cancellation up to 24 hours prior to appointment.</p>
+                    <p>Address: 742 Luxury Boulevard, Beverly Hills, CA</p>
+                    <button class="btn btn-primary" id="btn-print-ticket"><i class="fa-solid fa-print"></i> Print Styling Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
